@@ -2,3 +2,9 @@ runtime: go115
 
 env_variables:
   BUCKET_NAME:
+
+handlers:
+  - url: /.*
+    script: auto
+    redirect_http_response_code: 301
+    secure: always
